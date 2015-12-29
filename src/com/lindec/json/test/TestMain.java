@@ -38,7 +38,7 @@ public class TestMain {
 
 		Utils.timeBegin();
 		List<Corp> corps = new ArrayList<Corp>();
-		int amount = 100000;
+		int amount = 50000;
 		for (int i = 0; i < amount; i++) {
 			corps.add(Utils.fullObject(Corp.class));
 		}
@@ -123,7 +123,7 @@ public class TestMain {
 		String Person2 = "{\"name\":\"miki\",\"age\":27,\"cars\":[{\"brand\":\"FORD\",\"value\":\"200000\"},{\"brand\":\"BYD\",\"value\":\"150000\"}]}";
 		String Person3 = "{\"name\":\"TOM\",\"age\":28,\"cars\":[{\"brand\":\"BENZ\",\"value\":\"400000\"},{\"brand\":\"BYD\",\"value\":\"150000\"}]}";
 
-		int amount = 1000000;
+		int amount = 100000;
 
 		JSONObject jsonObject = JSONObject.fromObject(Person1);
 		Map<String, Class<?>> classMap = new HashMap<String, Class<?>>();
